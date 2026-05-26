@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html class="dark" lang="nl">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Veelgestelde vragen — Van Duren Padel Academy</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;family=Lexend:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="assets/site.css" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/tailwind-config.js"></script>
+<style>
+    details.faq-item summary { list-style: none; cursor: pointer; }
+    details.faq-item summary::-webkit-details-marker { display: none; }
+    details.faq-item summary .chev { transition: transform 0.25s ease; }
+    details.faq-item[open] summary .chev { transform: rotate(45deg); }
+    details.faq-item[open] summary { color: #c3f400; }
+    details.faq-item .answer { animation: faq-slide 0.25s ease; }
+    @keyframes faq-slide { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+</style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed" data-page="faq">
+
+<!-- Persistent padel court photo background -->
+<div class="photo-bg"></div>
+    </div>
+</div>
+
+<div id="site-header"></div>
+
+<main class="relative">
+    <!-- PAGE HERO -->
+    <section class="relative pt-40 pb-16 px-margin-edge overflow-hidden">
+        <div class="max-w-5xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 mb-6 px-4 py-1 border border-primary-fixed/30 rounded-full bg-primary-fixed/5">
+                <span class="material-symbols-outlined text-primary-fixed text-base">help</span>
+                <span class="font-label-bold text-label-bold text-primary-fixed uppercase tracking-widest">FAQ</span>
+            </div>
+            <h1 class="font-display-xl text-[clamp(48px,8vw,88px)] text-primary mb-6 leading-[0.95] text-glow uppercase">Veelgestelde vragen</h1>
+            <p class="font-body-lg text-body-lg text-secondary max-w-2xl mx-auto">
+                Vraag niet beantwoord? Stuur ons een berichtje — we reageren altijd binnen één werkdag.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ SECTIONS -->
+    <section class="px-margin-edge pb-section-gap">
+        <div class="max-w-4xl mx-auto space-y-16">
+
+            <!-- Boeken & spelen -->
+            <div>
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="material-symbols-outlined text-primary-fixed text-3xl">stadium</span>
+                    <h2 class="font-headline-md text-headline-md uppercase">Boeken &amp; spelen</h2>
+                </div>
+                <div class="space-y-px bg-white/10">
+                    <details class="faq-item bg-background/70 backdrop-blur-md">
+                        <summary class="flex justify-between items-center gap-4 p-6 font-label-bold text-label-bold uppercase text-primary">
+                            <span>Hoe boek ik een baan?</span>
+                            <span class="chev material-symbols-outlined text-primary-fixed">add</span>
+                        </summary>
+                        <div class="answer px-6 pb-6 text-secondary">Alle baanreserveringen lopen via Playtomic. Je ziet daar real-time welke banen vrij zijn, kunt direct betalen en je boeking verschijnt in de app.</div>
+                    </details>
+                    <details class="faq-item bg-background/70 backdrop-blur-md">
+                        <summary class="flex justify-between items-center gap-4 p-6 font-label-bold text-label-bold uppercase text-primary">
+                            <span>Hoe lang van tevoren kan ik boeken?</span>
+                            <span class="chev material-symbols-outlined text-primary-fixed">add</span>
+                        </summary>
+                        <div class="answer px-6 pb-6 text-secondary">Tot 7 dagen vooruit. Contractbaan-houders kunnen verder vooruit plannen.</div>
+                    </details>
+                    <details class="faq-item bg-background/70 backdrop-blur-md">
+                        <summary class="flex justify-between items-center gap-4 p-6 font-label-bold text-label-bold uppercase text-primary">
+                            <span>Kan ik kosteloos annuleren?</span>
+                            <span class="chev material-symbols-outlined text-primary-fixed">add</span>
+                        </summary>
+                        <div class="answer px-6 pb-6 text-secondary">Ja — tot 24 uur voor de starttijd via Playtomic. Daarna wordt het slot in rekening gebracht.</div>
+                    </details>
+                    <details class="faq-item bg-background/70 backdrop-blur-md">
+                        <summary class="flex justify-between items-center gap-4 p-6 font-label-bold text-label-bold uppercase text-primary">
+                            <span>Hoe lang is een speelslot?</span>
+                            <span class="chev material-symbols-outlined text-primary-fixed">add</span>
+                        </summary>
+                        <div class="answer px-6 pb-6 text-secondary">Standaard 90 minuten. In sommige tijdvakken zijn ook slots van 60 of 120 minuten beschikbaar.</div>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Lessen -->
+            <div>
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="material-symbols-outlined text-primary-fixed text-3xl">school</span>
+                    <h2 class="font-headline-md text-headline-md uppercase">Lessen</h2>
+                </div>
+                <div class="space-y-px bg-white/10">
+                    <details class="faq-item bg-background/70 backdrop-blur-md">
+                        <summary class="flex justify-between items-center gap-4 p-6 font-label-bold text-label-bold uppercase text-primary">
+                            <span>Bieden jullie lessen voor beginners?</span>
+                            <span class="chev material-symbols-outlined text-primary-fixed">add</span>
+                        </summary>
+                        <div class="answer px-6 pb-6 text-secondary">Absoluut. Beginners zijn de helft van wie we trainen. Start met een proefles (60 min, €100) — we matchen je daarna op niveau in een groep of plannen privélessen.</div>
+                    </details>
+                    <details class="faq-item bg-background/70 backdrop-blur-md">
+                        <summary class="flex justify-between items-center gap-4 p-6 font-label-bold text-label-bold uppercase text-primary">
+                            <span>Wat kost een privéles?</span>
+                            <span class="chev material-symbols-outlined text-primary-fixed">add</span>
+                        </summary>
+                        <div class="answer px-6 pb-6 text-secondary">€90 per les van 60 minuten, inclusief baan en materiaal. Lessen worden vooraf in reeksen van 5, 8 of 10 lessen betaald.</div>
+                    </details>
+                    <details class="faq-item bg-background/70 backdrop-blur-md">
+                        <summary class="flex justify-between items-center gap-4 p-6 font-label-bold text-label-bold uppercase text-primary">
+                            <span>Hoeveel personen zitten er in een groepsles?</span>
+                            <span class="chev material-symbols-outlined text-primary-fixed">add</span>
+                        </summary>
+                        <div class="answer px-6 pb-6 text-secondary">2 tot 4 personen per groep, gematcht op niveau.</div>
+                    </details>
+                    <details class="faq-item bg-background/70 backdrop-blur-md">
+                        <summary class="flex justify-between items-center gap-4 p-6 font-label-bold text-label-bold uppercase text-primary">
+                            <span>Geven jullie lessen aan kinderen?</span>
+                            <span class="chev material-symbols-outlined text-primary-fixed">add</span>
+                        </summary>
+                        <div class="answer px-6 pb-6 text-secondary">Ja, jeugdlessen voor kinderen t/m 14 jaar — vraag de actuele tarieven via mail aan.</div>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Praktisch -->
+            <div>
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="material-symbols-outlined text-primary-fixed text-3xl">info</span>
+                    <h2 class="font-headline-md text-headline-md uppercase">Praktisch</h2>
+                </div>
+                <div class="space-y-px bg-white/10">
+                    <details class="faq-item bg-background/70 backdrop-blur-md">
+                        <summary class="flex justify-between items-center gap-4 p-6 font-label-bold text-label-bold uppercase text-primary">
+                            <span>Wat heb ik nodig om te padellen?</span>
+                            <span class="chev material-symbols-outlined text-primary-fixed">add</span>
+                        </summary>
+                        <div class="answer px-6 pb-6 text-secondary">Sportkleding en zaalschoenen met een lichte, niet-afgevende zool. Rackets en ballen kun je bij ons aan de balie huren of kopen — alles Babolat.</div>
+                    </details>
+                    <details class="faq-item bg-background/70 backdrop-blur-md">
+                        <summary class="flex justify-between items-center gap-4 p-6 font-label-bold text-label-bold uppercase text-primary">
+                            <span>Is er parkeergelegenheid?</span>
+                            <span class="chev material-symbols-outlined text-primary-fixed">add</span>
+                        </summary>
+                        <div class="answer px-6 pb-6 text-secondary">Ja, gratis parkeren op eigen terrein.</div>
+                    </details>
+                    <details class="faq-item bg-background/70 backdrop-blur-md">
+                        <summary class="flex justify-between items-center gap-4 p-6 font-label-bold text-label-bold uppercase text-primary">
+                            <span>Is er horeca?</span>
+                            <span class="chev material-symbols-outlined text-primary-fixed">add</span>
+                        </summary>
+                        <div class="answer px-6 pb-6 text-secondary">Ja, we hebben een eigen Brabants café-restaurant — borrelen, lunchen of dineren na het spelen kan zonder reservering.</div>
+                    </details>
+                    <details class="faq-item bg-background/70 backdrop-blur-md">
+                        <summary class="flex justify-between items-center gap-4 p-6 font-label-bold text-label-bold uppercase text-primary">
+                            <span>Zijn de banen indoor?</span>
+                            <span class="chev material-symbols-outlined text-primary-fixed">add</span>
+                        </summary>
+                        <div class="answer px-6 pb-6 text-secondary">Ja. Vier overdekte banen met professionele LED-verlichting — het hele jaar door beschikbaar, ongeacht het weer.</div>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Contractbaan & lidmaatschap -->
+            <div>
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="material-symbols-outlined text-primary-fixed text-3xl">verified_user</span>
+                    <h2 class="font-headline-md text-headline-md uppercase">Contractbaan &amp; VIP</h2>
+                </div>
+                <div class="space-y-px bg-white/10">
+                    <details class="faq-item bg-background/70 backdrop-blur-md">
+                        <summary class="flex justify-between items-center gap-4 p-6 font-label-bold text-label-bold uppercase text-primary">
+                            <span>Wat is een contractbaan?</span>
+                            <span class="chev material-symbols-outlined text-primary-fixed">add</span>
+                        </summary>
+                        <div class="answer px-6 pb-6 text-secondary">Een vaste wekelijkse speeltijd voor jou en je vaste padelpartners — gegarandeerd, het hele seizoen. Voordelig seizoenstarief, onderling ruilen mogelijk.</div>
+                    </details>
+                    <details class="faq-item bg-background/70 backdrop-blur-md">
+                        <summary class="flex justify-between items-center gap-4 p-6 font-label-bold text-label-bold uppercase text-primary">
+                            <span>Wat houdt VIP-daluren in?</span>
+                            <span class="chev material-symbols-outlined text-primary-fixed">add</span>
+                        </summary>
+                        <div class="answer px-6 pb-6 text-secondary">Een lidmaatschap waarbij je onbeperkt speelt tijdens daluren voor een vaste maandprijs — ideaal voor flexibele spelers.</div>
+                    </details>
+                    <details class="faq-item bg-background/70 backdrop-blur-md">
+                        <summary class="flex justify-between items-center gap-4 p-6 font-label-bold text-label-bold uppercase text-primary">
+                            <span>Moet ik lid zijn om te spelen?</span>
+                            <span class="chev material-symbols-outlined text-primary-fixed">add</span>
+                        </summary>
+                        <div class="answer px-6 pb-6 text-secondary">Nee — losse boekingen zijn altijd mogelijk. Lidmaatschap of contractbaan is alleen interessant als je vaak speelt.</div>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="px-margin-edge py-section-gap bg-background/80 backdrop-blur-md">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-headline-md text-headline-md uppercase mb-4">Je vraag staat er niet bij?</h2>
+            <p class="text-secondary font-body-lg mb-10">Stuur ons een berichtje — we reageren altijd binnen één werkdag.</p>
+            <a href="Contact.html" class="shear-btn bg-primary-fixed text-on-primary-fixed font-label-bold text-label-bold px-10 py-5 uppercase hover:bg-white transition-colors duration-300">Naar contact</a>
+        </div>
+    </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="assets/site-chrome.js"></script>
+</body>
+</html>

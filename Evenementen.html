@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html class="dark" lang="nl">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Evenementen — Van Duren Padel Academy</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;family=Lexend:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="assets/site.css" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/tailwind-config.js"></script>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed" data-page="evenementen">
+
+<!-- Persistent padel court photo background -->
+<div class="photo-bg"></div>
+    </div>
+</div>
+
+<div id="site-header"></div>
+
+<main class="relative">
+    <!-- PAGE HERO -->
+    <section class="relative pt-40 pb-16 px-margin-edge overflow-hidden">
+        <div class="max-w-5xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 mb-6 px-4 py-1 border border-primary-fixed/30 rounded-full bg-primary-fixed/5">
+                <span class="material-symbols-outlined text-primary-fixed text-base">event</span>
+                <span class="font-label-bold text-label-bold text-primary-fixed uppercase tracking-widest">Agenda</span>
+            </div>
+            <h1 class="font-display-xl text-[clamp(48px,8vw,88px)] text-primary mb-6 leading-[0.95] text-glow uppercase">Evenementen</h1>
+            <p class="font-body-lg text-body-lg text-secondary max-w-2xl mx-auto">
+                Toernooien, ladderwedstrijden, themadagen en spontane padel-avonden. Schrijf je in en kom spelen — alle niveaus welkom.
+            </p>
+        </div>
+    </section>
+
+    <!-- FILTER -->
+    <section class="px-margin-edge pb-12">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center gap-3">
+            <span class="font-label-bold text-label-bold text-secondary/60 uppercase mr-2">Filter:</span>
+            <button class="px-4 py-2 bg-primary-fixed text-on-primary-fixed font-label-bold text-xs uppercase">Alles</button>
+            <button class="px-4 py-2 bg-white/5 border border-white/10 text-secondary hover:text-primary font-label-bold text-xs uppercase transition-colors">Toernooien</button>
+            <button class="px-4 py-2 bg-white/5 border border-white/10 text-secondary hover:text-primary font-label-bold text-xs uppercase transition-colors">Ladder</button>
+            <button class="px-4 py-2 bg-white/5 border border-white/10 text-secondary hover:text-primary font-label-bold text-xs uppercase transition-colors">Clinics</button>
+            <button class="px-4 py-2 bg-white/5 border border-white/10 text-secondary hover:text-primary font-label-bold text-xs uppercase transition-colors">Sociaal</button>
+        </div>
+    </section>
+
+    <!-- EVENT CARDS -->
+    <section class="px-margin-edge pb-section-gap">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+
+            <!-- Card 1 — featured -->
+            <article class="md:col-span-2 lg:col-span-2 group relative overflow-hidden bg-primary-fixed text-on-primary-fixed min-h-[320px] flex flex-col md:flex-row">
+                <div class="md:w-2/5 img-placeholder relative flex items-center justify-center">
+                    <span class="material-symbols-outlined text-on-primary-fixed/40 text-6xl">trophy</span>
+                </div>
+                <div class="p-8 md:p-10 flex flex-col justify-between flex-1">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="px-2 py-1 bg-on-primary-fixed text-primary-fixed text-[10px] font-label-bold uppercase">Toernooi</span>
+                            <span class="text-[10px] font-label-bold uppercase opacity-70">14 juni 2026 · 10:00 – 18:00</span>
+                        </div>
+                        <h3 class="font-headline-md text-[28px] uppercase mb-3 leading-tight">Van Duren Open · Zomer-editie</h3>
+                        <p class="text-sm opacity-90 mb-6">Het hoogtepunt van het seizoen. Vier categorieën, BBQ, prijzen van onze sponsoren en de Babolat trofee voor de winnaar.</p>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-4">
+                        <span class="shear-btn bg-black text-primary-fixed px-6 py-3 font-label-bold text-xs uppercase">Inschrijven via Playtomic</span>
+                        <span class="text-xs opacity-80">Nog 24 plekken</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="glass-panel p-8 flex flex-col gap-5 min-h-[320px]">
+                <div class="flex items-start justify-between">
+                    <div class="text-center px-3 py-2 bg-primary-fixed/10 border border-primary-fixed/30">
+                        <div class="font-stats-number text-[24px] text-primary-fixed leading-none">28</div>
+                        <div class="text-[9px] font-label-bold text-primary-fixed uppercase mt-1">MEI</div>
+                    </div>
+                    <span class="px-2 py-1 bg-white/5 border border-white/10 text-[10px] font-label-bold uppercase text-secondary">Ladder</span>
+                </div>
+                <div>
+                    <h3 class="font-headline-md text-[22px] uppercase mb-2 leading-tight">Ladder-avond #5</h3>
+                    <p class="text-secondary text-sm">Wekelijkse ladder voor alle niveaus. Roulerende koppels, gezellige sfeer.</p>
+                </div>
+                <div class="mt-auto flex items-center justify-between text-xs">
+                    <span class="text-secondary/70 flex items-center gap-1"><span class="material-symbols-outlined text-base">schedule</span> 19:30 – 22:30</span>
+                    <a href="#" class="font-label-bold text-primary-fixed uppercase hover:gap-2 flex items-center gap-1 transition-all">Inschrijven <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="glass-panel p-8 flex flex-col gap-5 min-h-[320px]">
+                <div class="flex items-start justify-between">
+                    <div class="text-center px-3 py-2 bg-primary-fixed/10 border border-primary-fixed/30">
+                        <div class="font-stats-number text-[24px] text-primary-fixed leading-none">02</div>
+                        <div class="text-[9px] font-label-bold text-primary-fixed uppercase mt-1">JUN</div>
+                    </div>
+                    <span class="px-2 py-1 bg-white/5 border border-white/10 text-[10px] font-label-bold uppercase text-secondary">Clinic</span>
+                </div>
+                <div>
+                    <h3 class="font-headline-md text-[22px] uppercase mb-2 leading-tight">Smash &amp; defense</h3>
+                    <p class="text-secondary text-sm">Themaclinic onder leiding van Bennet — focus op het uitspelen van de smash.</p>
+                </div>
+                <div class="mt-auto flex items-center justify-between text-xs">
+                    <span class="text-secondary/70 flex items-center gap-1"><span class="material-symbols-outlined text-base">schedule</span> 19:00 – 21:00</span>
+                    <a href="#" class="font-label-bold text-primary-fixed uppercase hover:gap-2 flex items-center gap-1 transition-all">Inschrijven <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+                </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="glass-panel p-8 flex flex-col gap-5 min-h-[320px]">
+                <div class="flex items-start justify-between">
+                    <div class="text-center px-3 py-2 bg-primary-fixed/10 border border-primary-fixed/30">
+                        <div class="font-stats-number text-[24px] text-primary-fixed leading-none">08</div>
+                        <div class="text-[9px] font-label-bold text-primary-fixed uppercase mt-1">JUN</div>
+                    </div>
+                    <span class="px-2 py-1 bg-white/5 border border-white/10 text-[10px] font-label-bold uppercase text-secondary">Sociaal</span>
+                </div>
+                <div>
+                    <h3 class="font-headline-md text-[22px] uppercase mb-2 leading-tight">Padel &amp; pintje</h3>
+                    <p class="text-secondary text-sm">Vrije inloop voor leden en hun introducés. Wisselende koppels en een goed glas Brabants bier.</p>
+                </div>
+                <div class="mt-auto flex items-center justify-between text-xs">
+                    <span class="text-secondary/70 flex items-center gap-1"><span class="material-symbols-outlined text-base">schedule</span> 20:00 – 23:00</span>
+                    <a href="#" class="font-label-bold text-primary-fixed uppercase hover:gap-2 flex items-center gap-1 transition-all">Inschrijven <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+                </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="glass-panel p-8 flex flex-col gap-5 min-h-[320px]">
+                <div class="flex items-start justify-between">
+                    <div class="text-center px-3 py-2 bg-primary-fixed/10 border border-primary-fixed/30">
+                        <div class="font-stats-number text-[24px] text-primary-fixed leading-none">21</div>
+                        <div class="text-[9px] font-label-bold text-primary-fixed uppercase mt-1">JUN</div>
+                    </div>
+                    <span class="px-2 py-1 bg-white/5 border border-white/10 text-[10px] font-label-bold uppercase text-secondary">Toernooi</span>
+                </div>
+                <div>
+                    <h3 class="font-headline-md text-[22px] uppercase mb-2 leading-tight">Damesdag</h3>
+                    <p class="text-secondary text-sm">Toernooi exclusief voor dames — alle niveaus welkom. Inclusief lunch en clinic.</p>
+                </div>
+                <div class="mt-auto flex items-center justify-between text-xs">
+                    <span class="text-secondary/70 flex items-center gap-1"><span class="material-symbols-outlined text-base">schedule</span> 11:00 – 17:00</span>
+                    <a href="#" class="font-label-bold text-primary-fixed uppercase hover:gap-2 flex items-center gap-1 transition-all">Inschrijven <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- CTA: organize your own -->
+    <section class="px-margin-edge py-section-gap court-lines bg-background/60 backdrop-blur-sm">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-label-bold text-label-bold text-primary-fixed uppercase tracking-[0.2em] mb-4">Eigen toernooi?</h2>
+            <h3 class="font-headline-lg text-headline-lg uppercase mb-6">Organiseer bij ons</h3>
+            <p class="text-secondary font-body-lg mb-10">Bedrijf, vereniging of vriendenclub? Wij regelen banen, prijzen, catering en — als je wilt — de coaches voor de clinic er omheen.</p>
+            <a href="mailto:vanduren@indoorpadelcentrum.nl?subject=Eigen%20toernooi%20organiseren" class="shear-btn bg-primary-fixed text-on-primary-fixed font-label-bold text-label-bold px-10 py-5 uppercase hover:bg-white transition-colors duration-300">Mail je idee</a>
+        </div>
+    </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="assets/site-chrome.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html class="dark" lang="nl">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nieuwsbrief — Van Duren Padel Academy</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;family=Lexend:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="assets/site.css" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/tailwind-config.js"></script>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed" data-page="nieuwsbrief">
+
+<!-- Persistent padel court photo background -->
+<div class="photo-bg"></div>
+    </div>
+</div>
+
+<div id="site-header"></div>
+
+<main class="relative">
+    <!-- PAGE HERO -->
+    <section class="relative pt-40 pb-16 px-margin-edge overflow-hidden">
+        <div class="max-w-5xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 mb-6 px-4 py-1 border border-primary-fixed/30 rounded-full bg-primary-fixed/5">
+                <span class="material-symbols-outlined text-primary-fixed text-base">mark_email_unread</span>
+                <span class="font-label-bold text-label-bold text-primary-fixed uppercase tracking-widest">Eens per maand</span>
+            </div>
+            <h1 class="font-display-xl text-[clamp(48px,8vw,88px)] text-primary mb-6 leading-[0.95] text-glow uppercase">Nieuwsbrief</h1>
+            <p class="font-body-lg text-body-lg text-secondary max-w-2xl mx-auto">
+                Wil je op de hoogte blijven van toernooien, clinics en aanbiedingen bij Van Duren? Schrijf je hier in — geen gedoe, geen spam, alleen padel.
+            </p>
+        </div>
+    </section>
+
+    <!-- SIGNUP FORM -->
+    <section class="px-margin-edge pb-section-gap">
+        <div class="max-w-3xl mx-auto">
+            <div class="glass-panel p-8 md:p-12 relative overflow-hidden">
+                <div class="absolute -top-20 -right-20 w-60 h-60 rounded-full bg-primary-fixed/10 blur-3xl pointer-events-none"></div>
+                <h2 class="font-headline-md text-headline-md uppercase mb-2 relative">Meld je aan</h2>
+                <p class="text-secondary text-sm mb-8 relative">Ééntje per maand. Uitschrijven kan altijd met één klik.</p>
+
+                <!-- Mailchimp embed placeholder — action wordt gevuld zodra de Mailchimp lijst-URL bekend is -->
+                <form action="https://__MAILCHIMP_URL__/subscribe/post?u=__USER_ID__&amp;id=__LIST_ID__"
+                      method="post"
+                      target="_blank"
+                      class="space-y-6 relative"
+                      novalidate>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <label class="block">
+                            <span class="font-label-bold text-label-bold text-secondary uppercase block mb-2">Voornaam</span>
+                            <input type="text" name="FNAME" class="w-full bg-transparent border-b-2 border-white/20 focus:border-primary-fixed focus:ring-0 text-white py-2 transition-all"/>
+                        </label>
+                        <label class="block">
+                            <span class="font-label-bold text-label-bold text-secondary uppercase block mb-2">E-mail*</span>
+                            <input type="email" name="EMAIL" required class="w-full bg-transparent border-b-2 border-white/20 focus:border-primary-fixed focus:ring-0 text-white py-2 transition-all"/>
+                        </label>
+                    </div>
+
+                    <fieldset class="pt-2">
+                        <legend class="font-label-bold text-label-bold text-secondary uppercase mb-3">Waar wil je over horen?</legend>
+                        <div class="flex flex-wrap gap-3">
+                            <label class="cursor-pointer">
+                                <input type="checkbox" name="INTERESTS" value="toernooien" class="peer sr-only" checked/>
+                                <span class="block px-4 py-2 bg-white/5 border border-white/10 text-secondary text-xs font-label-bold uppercase peer-checked:bg-primary-fixed peer-checked:text-on-primary-fixed peer-checked:border-primary-fixed transition-all">Toernooien</span>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="checkbox" name="INTERESTS" value="clinics" class="peer sr-only" checked/>
+                                <span class="block px-4 py-2 bg-white/5 border border-white/10 text-secondary text-xs font-label-bold uppercase peer-checked:bg-primary-fixed peer-checked:text-on-primary-fixed peer-checked:border-primary-fixed transition-all">Clinics</span>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="checkbox" name="INTERESTS" value="lessen" class="peer sr-only"/>
+                                <span class="block px-4 py-2 bg-white/5 border border-white/10 text-secondary text-xs font-label-bold uppercase peer-checked:bg-primary-fixed peer-checked:text-on-primary-fixed peer-checked:border-primary-fixed transition-all">Lessen</span>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="checkbox" name="INTERESTS" value="aanbiedingen" class="peer sr-only" checked/>
+                                <span class="block px-4 py-2 bg-white/5 border border-white/10 text-secondary text-xs font-label-bold uppercase peer-checked:bg-primary-fixed peer-checked:text-on-primary-fixed peer-checked:border-primary-fixed transition-all">Aanbiedingen</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <!-- Mailchimp honeypot -->
+                    <div style="position:absolute;left:-5000px" aria-hidden="true"><input type="text" name="b___USER_ID_____LIST_ID__" tabindex="-1" value=""/></div>
+
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-4 pt-2">
+                        <button type="submit" class="shear-btn bg-primary-fixed text-on-primary-fixed font-label-bold text-label-bold px-10 py-4 uppercase hover:bg-white transition-colors">Inschrijven</button>
+                        <p class="text-xs text-secondary/60 italic">We delen je gegevens niet. Eén klik om uit te schrijven.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY SUBSCRIBE -->
+    <section class="px-margin-edge py-section-gap court-lines bg-background/60 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-1 h-12 bg-primary-fixed"></div>
+                <h2 class="font-headline-lg text-headline-lg uppercase">Wat krijg je?</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                <div class="glass-panel p-8 flex flex-col gap-4">
+                    <span class="material-symbols-outlined text-primary-fixed text-4xl">trophy</span>
+                    <h3 class="font-headline-md text-[22px] uppercase">Eerst weten</h3>
+                    <p class="text-secondary text-sm">Toernooien en clinics vol? Niet als je op tijd bent — abonnees krijgen het eerste de inschrijflink.</p>
+                </div>
+                <div class="glass-panel p-8 flex flex-col gap-4">
+                    <span class="material-symbols-outlined text-primary-fixed text-4xl">local_offer</span>
+                    <h3 class="font-headline-md text-[22px] uppercase">Exclusieve aanbiedingen</h3>
+                    <p class="text-secondary text-sm">Af en toe een korting op een lessenreeks, baanboeking of materiaal — alleen voor abonnees.</p>
+                </div>
+                <div class="glass-panel p-8 flex flex-col gap-4">
+                    <span class="material-symbols-outlined text-primary-fixed text-4xl">tips_and_updates</span>
+                    <h3 class="font-headline-md text-[22px] uppercase">Tips van de coaches</h3>
+                    <p class="text-secondary text-sm">Korte video's en tips waar je je spel direct mee verbetert — recht uit de hand van Martin en Bennet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="assets/site-chrome.js"></script>
+</body>
+</html>
