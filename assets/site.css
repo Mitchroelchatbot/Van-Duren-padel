@@ -1,0 +1,131 @@
+/* ============================================================
+   Van Duren Padel Academy — shared styles
+   ============================================================ */
+
+.glass-panel {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.court-diagonal {
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+}
+.shear-btn {
+    clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+}
+.text-glow {
+    text-shadow: 0 0 20px rgba(195, 244, 0, 0.3);
+}
+.court-lines {
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 40px, rgba(255,255,255,0.03) 40px, rgba(255,255,255,0.03) 41px);
+}
+
+/* === Padel court background === */
+.court-bg-wrap {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+    background:
+        radial-gradient(ellipse 90% 60% at 50% 0%, rgba(40, 70, 120, 0.55) 0%, rgba(20, 30, 55, 0.35) 35%, transparent 70%),
+        radial-gradient(ellipse at 50% 100%, rgba(8, 10, 16, 0.9) 0%, transparent 60%),
+        linear-gradient(to bottom, #0d1322 0%, #0b0d14 55%, #08090d 100%);
+}
+.wall {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom,
+        rgba(195,244,0,0.55) 0%,
+        rgba(195,244,0,0.35) 18%,
+        rgba(195,244,0,0.18) 50%,
+        rgba(195,244,0,0.08) 100%);
+    box-shadow: 0 0 14px rgba(195,244,0,0.25);
+}
+.wall-left  { left: 21%; }
+.wall-right { right: 21%; }
+.court-floor {
+    position: absolute;
+    top: 0;
+    left: 21%;
+    right: 21%;
+    height: 1400px;
+    background:
+        linear-gradient(to bottom,
+            rgba(30, 55, 120, 0.35) 0%,
+            rgba(20, 40, 90, 0.22) 45%,
+            rgba(10, 20, 50, 0.05) 90%,
+            transparent 100%);
+    mix-blend-mode: screen;
+    opacity: 0.6;
+}
+.light-dot {
+    position: absolute;
+    width: 10px; height: 10px;
+    border-radius: 9999px;
+    background: #fff;
+    box-shadow:
+        0 0 6px 2px rgba(255,255,255,0.9),
+        0 0 24px 6px rgba(220,235,255,0.6),
+        0 0 60px 14px rgba(160,200,255,0.35);
+}
+.light-cone {
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 320px;
+    background: radial-gradient(ellipse 50% 100% at 50% 0%,
+        rgba(220,235,255,0.18) 0%,
+        rgba(180,210,255,0.08) 45%,
+        transparent 80%);
+    clip-path: polygon(45% 0, 55% 0, 100% 100%, 0 100%);
+    filter: blur(6px);
+}
+.img-placeholder {
+    background:
+        repeating-linear-gradient(135deg, rgba(255,255,255,0.04) 0 2px, transparent 2px 14px),
+        linear-gradient(135deg, #1e2a3f 0%, #0d1726 100%);
+}
+
+/* === Photo background (gebruikt op home + alle subpagina's) === */
+.photo-bg {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: -1;
+    background-image:
+        linear-gradient(to bottom, rgba(18, 19, 23, 0.55), rgba(18, 19, 23, 0.85)),
+        url('https://lh3.googleusercontent.com/aida-public/AB6AXuAlhfLG7GYA_rcvBeZeOXSKnOW877K0tA2rF9Kv_-r6jBtEtipwfLTeXkBlQT4Vw0Z_DSnx81vsg2tSLzoQTmxRfdPiB0cvTj55v8a2kdkpQi5PSP8fnrvXOstGS13McrUzKn25hX_CTZe5lS2mo5g7ybaG10ZGqH4T4sNXZlIf1mbZjNxR57c33pBRllQ0mjjGm_3lHoL0Ekg56Pfxdf7dWmeJ-3CwwRqz_Jy6RW6spXJaPx1_pJ8cor7TX96CdOjP940MmZRz7ug');
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(0.2);
+}
+.photo-bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(30, 58, 138, 0.15);
+    pointer-events: none;
+}
+
+/* === Logo === */
+.vd-logo-main {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    letter-spacing: -0.02em;
+    line-height: 0.9;
+    color: #fff;
+}
+.vd-logo-sub {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+    font-size: 9px;
+    letter-spacing: 0.32em;
+    color: #c3f400;
+    margin-top: 3px;
+}
