@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Baanhuur — Van Duren Padel Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+<template id="__bundler_thumbnail" data-bg-color="#0d0e12">
+    <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+        <line x1="280" y1="120" x2="280" y2="680" stroke="#c3f400" stroke-width="6" opacity="0.5"/>
+        <line x1="920" y1="120" x2="920" y2="680" stroke="#c3f400" stroke-width="6" opacity="0.5"/>
+        <line x1="280" y1="180" x2="920" y2="180" stroke="#c3f400" stroke-width="3" opacity="0.4"/>
+        <line x1="280" y1="290" x2="920" y2="290" stroke="#c3f400" stroke-width="3" opacity="0.55"/>
+        <line x1="280" y1="500" x2="920" y2="500" stroke="#c3f400" stroke-width="5" stroke-dasharray="14 10" opacity="0.6"/>
+        <line x1="600" y1="180" x2="600" y2="290" stroke="#c3f400" stroke-width="3" opacity="0.5"/>
+        <text x="600" y="600" text-anchor="middle" fill="#ffffff" font-family="Lexend, sans-serif" font-size="96" font-weight="800" letter-spacing="-3">VAN DUREN</text>
+        <text x="600" y="650" text-anchor="middle" fill="#c3f400" font-family="Lexend, sans-serif" font-size="22" font-weight="600" letter-spacing="8">PADEL ACADEMY</text>
+    </svg>
+</template>
+</head>
+<body>
+
+<!-- Vaste padelbaan-achtergrond -->
+<div class="photo-bg"></div>
+
+<header class="site-header">
+    <a class="logo" href="index.html">
+        <span class="logo-main">Van Duren</span>
+        <span class="logo-sub">Padel Academy</span>
+    </a>
+    <nav class="main-nav">
+        <a class="nav-link is-active" href="baanhuur.html">Banen</a>
+        <a class="nav-link" href="trainingen.html">Lessen</a>
+        <a class="nav-link" href="clinics.html">Bedrijven</a>
+        <a class="nav-link" href="evenementen.html">Evenementen</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <div class="more-wrap" id="moreWrap">
+            <button class="nav-link more-btn" id="moreBtn" aria-haspopup="true" aria-expanded="false">
+                Meer <span class="material-symbols-outlined more-chev">expand_more</span>
+            </button>
+            <div class="more-menu" id="moreMenu" role="menu">
+                <a class="" href="team.html"><span class="material-symbols-outlined">groups_3</span> Team</a>
+                <a class="" href="sponsoren.html"><span class="material-symbols-outlined">handshake</span> Sponsoren</a>
+                <a class="" href="faq.html"><span class="material-symbols-outlined">help</span> FAQ</a>
+                <a class="" href="nieuwsbrief.html"><span class="material-symbols-outlined">mark_email_unread</span> Nieuwsbrief</a>
+                <a class="" href="regels.html"><span class="material-symbols-outlined">menu_book</span> Padelregels</a>
+            </div>
+        </div>
+    </nav>
+    <div class="header-actions">
+        <a class="btn btn-volt btn-pill book-btn" href="https://playtomic.io/van-duren-indoor-padel-centrum/a52205f6-6954-4d82-bda0-b2040fc82dc4" target="_blank" rel="noopener">Boek nu</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu openen" aria-expanded="false">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+    </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+    <nav>
+        <a class="is-active" href="baanhuur.html">Banen</a>
+        <a class="" href="trainingen.html">Lessen</a>
+        <a class="" href="clinics.html">Bedrijven</a>
+        <a class="" href="evenementen.html">Evenementen</a>
+        <a class="" href="contact.html">Contact</a>
+        <a class="" href="team.html">Team</a>
+        <a class="" href="sponsoren.html">Sponsoren</a>
+        <a class="" href="faq.html">FAQ</a>
+        <a class="" href="nieuwsbrief.html">Nieuwsbrief</a>
+        <a class="" href="regels.html">Padelregels</a>
+        <a class="btn btn-volt shear" href="https://playtomic.io/van-duren-indoor-padel-centrum/a52205f6-6954-4d82-bda0-b2040fc82dc4" target="_blank" rel="noopener">Boek een baan</a>
+    </nav>
+</div>
+
+<main>
+    <!-- Pagina-hero -->
+    <section class="page-hero">
+        <div class="inner">
+            <span class="hero-pill"><span class="material-symbols-outlined">stadium</span> Indoor WPT-banen</span>
+            <h1 class="page-title uppercase text-glow">Baanhuur</h1>
+            <p class="page-lead">Speel op de internationale World Padel Tour banen van Van Duren — overdekt, professioneel verlicht en het hele jaar door beschikbaar in Son en Breugel.</p>
+            <div class="page-actions">
+                <a class="btn btn-volt shear" href="https://playtomic.io/van-duren-indoor-padel-centrum/a52205f6-6954-4d82-bda0-b2040fc82dc4" target="_blank" rel="noopener">Boek via Playtomic</a>
+                <a class="btn-ghost" href="#contract">Bekijk contractbanen <span class="material-symbols-outlined">arrow_forward</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistieken -->
+    <section class="sec--tight">
+        <div class="stat-strip">
+            <div class="stat-cell"><span class="num">4</span><span class="lbl">Indoor banen</span></div>
+            <div class="stat-cell"><span class="num">WPT</span><span class="lbl">Baan-kwaliteit</span></div>
+            <div class="stat-cell"><span class="num">7</span><span class="lbl">Dagen per week</span></div>
+            <div class="stat-cell"><span class="num">90 min</span><span class="lbl">Standaard slot</span></div>
+        </div>
+    </section>
+
+    <!-- Zo speel je -->
+    <section class="sec bg-soft-40">
+        <div class="container">
+            <div class="section-head">
+                <div class="section-title"><div class="section-bar"></div><h2 class="t-headline-lg uppercase">Zo speel je</h2></div>
+            </div>
+            <div class="grid grid-3">
+                <!-- Losse boeking -->
+                <div class="glass panel" style="min-height: 360px;">
+                    <span class="material-symbols-outlined lead-ico">schedule</span>
+                    <div>
+                        <h3 style="font-size: 32px; margin-bottom: 12px;">Losse boeking</h3>
+                        <p style="font-size: 16px;">Reserveer per uur of slot via Playtomic. Direct beschikbaar — pak je tas en speel.</p>
+                    </div>
+                    <ul class="check-list" style="margin-top: auto;">
+                        <li><span class="material-symbols-outlined">check_circle</span> Real-time beschikbaarheid</li>
+                        <li><span class="material-symbols-outlined">check_circle</span> Direct online betalen</li>
+                        <li><span class="material-symbols-outlined">check_circle</span> Tot 7 dagen vooruit boeken</li>
+                    </ul>
+                    <a class="btn btn-volt shear" style="padding: 12px 24px;" href="https://playtomic.io/van-duren-indoor-padel-centrum/a52205f6-6954-4d82-bda0-b2040fc82dc4" target="_blank" rel="noopener">Reserveer nu</a>
+                </div>
+                <!-- VIP daluren -->
+                <div class="glass panel" style="min-height: 360px; position: relative;">
+                    <span class="card-badge card-badge--volt">Nieuw</span>
+                    <span class="material-symbols-outlined lead-ico">workspace_premium</span>
+                    <div>
+                        <h3 style="font-size: 32px; margin-bottom: 12px;">VIP-daluren</h3>
+                        <p style="font-size: 16px;">Speel onbeperkt tijdens daluren met het VIP-lidmaatschap. Ideaal voor flexibele spelers.</p>
+                    </div>
+                    <ul class="check-list" style="margin-top: auto;">
+                        <li><span class="material-symbols-outlined">check_circle</span> Vaste maandprijs</li>
+                        <li><span class="material-symbols-outlined">check_circle</span> Voorrang op daluur-slots</li>
+                        <li><span class="material-symbols-outlined">check_circle</span> Toegang tot ledenevenementen</li>
+                    </ul>
+                    <a class="card-link" href="mailto:vanduren@indoorpadelcentrum.nl?subject=Informatie%20VIP-daluren">Meer informatie <span class="material-symbols-outlined">trending_flat</span></a>
+                </div>
+                <!-- Contractbaan -->
+                <div class="glass panel" id="contract" style="min-height: 360px; border-color: rgba(195,244,0,0.3);">
+                    <span class="material-symbols-outlined lead-ico">verified_user</span>
+                    <div>
+                        <h3 style="font-size: 32px; margin-bottom: 12px;">Contractbaan</h3>
+                        <p style="font-size: 16px;">Jouw vaste baan op je vaste tijd. Garandeer speeltijd, wekelijks, het hele seizoen.</p>
+                    </div>
+                    <ul class="check-list" style="margin-top: auto;">
+                        <li><span class="material-symbols-outlined">check_circle</span> Gegarandeerd speelmoment</li>
+                        <li><span class="material-symbols-outlined">check_circle</span> Voordelig seizoenstarief</li>
+                        <li><span class="material-symbols-outlined">check_circle</span> Onderling ruilen mogelijk</li>
+                    </ul>
+                    <a class="btn btn-outline shear" style="padding: 12px 24px;" href="mailto:vanduren@indoorpadelcentrum.nl?subject=Aanvraag%20contractbaan">Aanvraag indienen</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faciliteiten -->
+    <section class="sec court-lines bg-soft-60">
+        <div class="split">
+            <div>
+                <p class="eyebrow">De banen</p>
+                <h3 class="t-headline-lg uppercase">Internationale WPT-kwaliteit, indoor</h3>
+                <div class="prose">
+                    <p>Vier overdekte padelbanen, gebouwd volgens de specificaties van de World Padel Tour: het officiële glas, het juiste hekwerk, professionele LED-verlichting en een ondergrond die het spel rustig en voorspelbaar houdt.</p>
+                    <p>Onze banen zijn uitgerust met Babolat-materiaal. Materiaalhuur (rackets &amp; ballen) regel je aan de balie of bij je boeking.</p>
+                </div>
+                <div class="feature-2x2">
+                    <div class="item"><span class="material-symbols-outlined">lightbulb</span><span>LED-verlichting</span></div>
+                    <div class="item"><span class="material-symbols-outlined">ac_unit</span><span>Indoor klimaat</span></div>
+                    <div class="item"><span class="material-symbols-outlined">sports_tennis</span><span>Babolat materiaal</span></div>
+                    <div class="item"><span class="material-symbols-outlined">local_cafe</span><span>Eigen horeca</span></div>
+                </div>
+            </div>
+            <div class="figure">
+                <div class="frame-tr"></div>
+                <div class="media img-placeholder">
+                    <div class="ph-label"><span class="material-symbols-outlined">stadium</span> Foto baanhal</div>
+                </div>
+                <div class="badge-corner left"><div class="num">4×</div><div class="lbl">WPT-banen</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Goed om te weten -->
+    <section class="sec bg-soft-80">
+        <div class="container container--narrow">
+            <div class="section-head">
+                <div class="section-title"><div class="section-bar"></div><h2 class="t-headline-lg uppercase">Goed om te weten</h2></div>
+            </div>
+            <div class="grid grid-2">
+                <div>
+                    <h4 class="eyebrow" style="letter-spacing: 0.05em; margin-bottom: 8px;">Boeken</h4>
+                    <p class="text-muted" style="font-size: 14px;">Alle losse boekingen verlopen via Playtomic. Actuele beschikbaarheid en tarieven zie je daar live.</p>
+                </div>
+                <div>
+                    <h4 class="eyebrow" style="letter-spacing: 0.05em; margin-bottom: 8px;">Annuleren</h4>
+                    <p class="text-muted" style="font-size: 14px;">Kosteloos annuleren via Playtomic tot 24 uur voor de starttijd van je slot.</p>
+                </div>
+                <div>
+                    <h4 class="eyebrow" style="letter-spacing: 0.05em; margin-bottom: 8px;">Materiaal</h4>
+                    <p class="text-muted" style="font-size: 14px;">Babolat rackets en ballen zijn aan de balie verkrijgbaar. Eigen racket meenemen mag uiteraard.</p>
+                </div>
+                <div>
+                    <h4 class="eyebrow" style="letter-spacing: 0.05em; margin-bottom: 8px;">Kleding</h4>
+                    <p class="text-muted" style="font-size: 14px;">Sportkleding en zaalschoenen met een niet-afgevende zool zijn verplicht op de baan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="site-footer">
+    <div class="footer-grid">
+        <div class="footer-brand">
+            <a class="logo" href="index.html">
+                <span class="logo-main" style="font-size: 32px;">Van Duren</span>
+                <span class="logo-sub" style="font-size: 11px;">Padel Academy</span>
+            </a>
+            <p>Altijd padel in Son. Babolat Padel Academy partner. WPT-banen, persoonlijke coaching en een echte club-sfeer.</p>
+            <div class="footer-contact">
+                <span><span class="material-symbols-outlined icon icon--sm">location_on</span> Wolverstraat 2, 5691 PV Son en Breugel</span>
+                <a href="mailto:vanduren@indoorpadelcentrum.nl"><span class="material-symbols-outlined icon icon--sm">mail</span> vanduren@indoorpadelcentrum.nl</a>
+            </div>
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/Van-Duren-indoor-padelcentrum-110056634725945/" target="_blank" rel="noopener" aria-label="Facebook"><span class="material-symbols-outlined icon--sm">public</span></a>
+                <a href="mailto:vanduren@indoorpadelcentrum.nl" aria-label="E-mail"><span class="material-symbols-outlined icon--sm">alternate_email</span></a>
+            </div>
+        </div>
+
+        <div class="footer-col footer-sport">
+            <h5>Sport</h5>
+            <ul>
+                <li><a href="baanhuur.html">Banen boeken</a></li>
+                <li><a href="trainingen.html">Lessen</a></li>
+                <li><a href="clinics.html">Bedrijven &amp; clinics</a></li>
+                <li><a href="evenementen.html">Evenementen</a></li>
+                <li><a href="regels.html">Padelregels</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col footer-about">
+            <h5>Over ons</h5>
+            <ul>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="sponsoren.html">Sponsoren</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col footer-news">
+            <h5>Blijf op de hoogte</h5>
+            <p>Schrijf je in voor onze nieuwsbrief. Eens per maand toernooien, clinics en aanbiedingen.</p>
+            <form class="footer-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Bedankt!';">
+                <input type="email" placeholder="je@email.nl" required/>
+                <button type="submit">Inschrijven</button>
+            </form>
+            <a class="more-link" href="nieuwsbrief.html">Meer info →</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <span>© 2026 VAN DUREN PADEL ACADEMY · KVK 12345678</span>
+        <div class="links">
+            <a href="#">Privacy</a>
+            <a href="#">Algemene voorwaarden</a>
+            <a href="#">Cookies</a>
+        </div>
+    </div>
+</footer>
+
+<script src="site.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
