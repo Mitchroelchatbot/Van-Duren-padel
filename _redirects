@@ -1,0 +1,22 @@
+# 301-redirects: oude WordPress-URL's -> nieuwe pagina's
+# Formaat: <oud pad>  <nieuw pad>  <statuscode>
+# Voor hosts die _redirects ondersteunen (o.a. Netlify, Cloudflare Pages).
+# Vul onderaan aan zodra meer oude URL's bekend zijn.
+
+/tarieven-baanhuur              /baanhuur.html        301
+/tarieven-lessen                /lessen.html          301
+/bedrijfsclinics                /clinics.html         301
+/padel-regels                   /padelregels.html     301
+
+# Evenementen / toernooien -> events-blok op de homepage
+/evenementen                    /index.html#events    301
+/p500-toernooi                  /index.html#events    301
+
+# Competitie: geen aparte pagina (meer) -> events-blok homepage
+/competitie                     /index.html#events    301
+
+# Jeugd t/m 14 jaar -> lessen (jeugd valt onder het lesaanbod)
+/padel-jeugd-tot-en-met-14-jaar /lessen.html          301
+
+# --- Aanvullen door klant ---------------------------------------------
+# /oude-url                     /nieuwe-pagina.html   301

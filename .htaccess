@@ -1,0 +1,30 @@
+# =========================================================================
+# 301-redirects: oude WordPress-URL's -> nieuwe pagina's
+# Padel Academy van Duren
+#
+# Plaats dit bestand in de webroot (Apache). Zorg dat mod_rewrite aan staat.
+# Vul de lijst onderaan aan met extra oude URL's zodra die bekend zijn.
+# =========================================================================
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # --- Bekende mapping ---------------------------------------------------
+    RewriteRule ^tarieven-baanhuur/?$            /baanhuur.html        [R=301,L]
+    RewriteRule ^tarieven-lessen/?$              /lessen.html          [R=301,L]
+    RewriteRule ^bedrijfsclinics/?$              /clinics.html         [R=301,L]
+    RewriteRule ^padel-regels/?$                 /padelregels.html     [R=301,L]
+
+    # Evenementen / toernooien -> events-blok op de homepage
+    RewriteRule ^evenementen/?$                  /index.html#events    [R=301,L]
+    RewriteRule ^p500-toernooi/?$                /index.html#events    [R=301,L]
+
+    # Competitie: geen aparte pagina (meer) -> events-blok homepage
+    RewriteRule ^competitie/?$                   /index.html#events    [R=301,L]
+
+    # Jeugd t/m 14 jaar -> lessen (jeugd valt onder het lesaanbod)
+    RewriteRule ^padel-jeugd-tot-en-met-14-jaar/?$ /lessen.html        [R=301,L]
+
+    # --- Aanvullen door klant ---------------------------------------------
+    # RewriteRule ^oude-url/?$                   /nieuwe-pagina.html   [R=301,L]
+</IfModule>
