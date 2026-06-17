@@ -1,0 +1,8 @@
+# Lokale preview-artefacten (screenshots e.d.)
+.preview/
+
+# Vercel
+.vercel/
+
+# OS / editor
+.DS_Store
